@@ -207,7 +207,7 @@ def generate_movie( mode ):
         output_file='Cmaj_mid.mp4'
 
     elif ( mode is 'Cmaj_Cform' ): # 5th-string root
-        tr = Trainer( nsound=17, offset=-4, ntry=17*5 )
+        tr = Trainer( nsound=17, offset=-5, ntry=17*5 )
         output_file='Cmaj_Cform.mp4'
 
     elif ( mode is 'Cmaj_Aform' ): # 5th-string root
