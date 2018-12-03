@@ -121,7 +121,7 @@ class Trainer:
         for i, math_interval in enumerate(s.train_data):
             freq = s.getFreq(math_interval)
             root = s.getFreq(s.root_note)
-            cur_wave = get_wave_Ped(A=[0.5, 0.7], 
+            cur_wave = get_wave_Ped(A=[0.2, 0.3], 
                                     Hz=[root, freq], sec=[1.0, 3.0])
             if i==0:
                 wave = cur_wave
@@ -257,6 +257,6 @@ generate_movie( 'Cmaj_Cform' ) #C-form
 generate_movie( 'Cmaj_Aform' ) #A-form
 generate_movie( 'Cmaj_Gform' ) #G-form
 generate_movie( 'Cmaj_Eform' ) #E-form
-generate_movie( 'Cmaj_Dform' ) #D-form
+#generate_movie( 'Cmaj_Dform' ) #D-form
 
 #generate_movie( 'test' )
