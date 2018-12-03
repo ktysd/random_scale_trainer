@@ -208,7 +208,7 @@ def generate_movie( mode ):
 
     elif ( mode is 'Cmaj_Cform' ): # 5th-string root
         tr = Trainer( nsound=17, offset=-4, ntry=17*5 )
-        output_file='Cmaj_Eform.mp4'
+        output_file='Cmaj_Cform.mp4'
 
     elif ( mode is 'Cmaj_Aform' ): # 5th-string root
         tr = Trainer( nsound=16, offset=-3, ntry=16*5 )
@@ -251,12 +251,12 @@ def generate_movie( mode ):
     subprocess.run(['rm', '-f', 'temp.mp4'])
 
 
-#generate_movie( 'Cmaj_low' )
-#generate_movie( 'Cmaj_mid' )
-#generate_movie( 'Cmaj_Cform' ) #C-form
-#generate_movie( 'Cmaj_Aform' ) #A-form
-#generate_movie( 'Cmaj_Gform' ) #G-form
-#generate_movie( 'Cmaj_Eform' ) #E-form
+generate_movie( 'Cmaj_low' )
+generate_movie( 'Cmaj_mid' )
+generate_movie( 'Cmaj_Cform' ) #C-form
+generate_movie( 'Cmaj_Aform' ) #A-form
+generate_movie( 'Cmaj_Gform' ) #G-form
+generate_movie( 'Cmaj_Eform' ) #E-form
 generate_movie( 'Cmaj_Dform' ) #D-form
 
 #generate_movie( 'test' )
